@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FilmographyOrPhotoCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="268"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="268"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ui-i3-7Fl">
+                        <rect key="frame" x="0.0" y="0.0" width="363" height="268"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HwF-GB-xcP">
+                                <rect key="frame" x="42" y="16" width="279" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGPhotoOrFilmography" translatesAutoresizingMaskIntoConstraints="NO" id="w6l-H8-Hng">
+                                        <rect key="frame" x="0.0" y="0.0" width="279" height="40"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Evl-Pq-Axq">
+                                        <rect key="frame" x="0.0" y="0.0" width="139.66666666666666" height="40"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Filmography" backgroundImage="BGButtonPhoto"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="filmographyBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="jJT-hs-TLW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRY-cy-Mbd">
+                                        <rect key="frame" x="139.66666666666663" y="0.0" width="139.33333333333337" height="40"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Photo"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="photoBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="vDb-DK-eIr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vRY-cy-Mbd" secondAttribute="bottom" id="1xW-FV-k7r"/>
+                                    <constraint firstItem="vRY-cy-Mbd" firstAttribute="top" secondItem="HwF-GB-xcP" secondAttribute="top" id="3YU-4C-VC2"/>
+                                    <constraint firstAttribute="height" constant="40" id="6gt-Et-SgN"/>
+                                    <constraint firstItem="Evl-Pq-Axq" firstAttribute="top" secondItem="HwF-GB-xcP" secondAttribute="top" id="A04-UE-pzX"/>
+                                    <constraint firstAttribute="bottom" secondItem="w6l-H8-Hng" secondAttribute="bottom" id="LBt-vr-tFZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Evl-Pq-Axq" secondAttribute="bottom" id="LK6-zG-frH"/>
+                                    <constraint firstAttribute="trailing" secondItem="vRY-cy-Mbd" secondAttribute="trailing" id="Oty-w5-NLw"/>
+                                    <constraint firstItem="w6l-H8-Hng" firstAttribute="leading" secondItem="HwF-GB-xcP" secondAttribute="leading" id="ZbB-gx-Lfq"/>
+                                    <constraint firstItem="w6l-H8-Hng" firstAttribute="top" secondItem="HwF-GB-xcP" secondAttribute="top" id="aax-sS-l53"/>
+                                    <constraint firstItem="Evl-Pq-Axq" firstAttribute="leading" secondItem="HwF-GB-xcP" secondAttribute="leading" id="eGX-JG-9nO"/>
+                                    <constraint firstItem="vRY-cy-Mbd" firstAttribute="leading" secondItem="Evl-Pq-Axq" secondAttribute="trailing" id="iB9-U0-WTh"/>
+                                    <constraint firstAttribute="trailing" secondItem="w6l-H8-Hng" secondAttribute="trailing" id="iIz-gE-SRf"/>
+                                    <constraint firstItem="vRY-cy-Mbd" firstAttribute="width" secondItem="Evl-Pq-Axq" secondAttribute="width" id="phN-hQ-diE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Vrn-oQ-OOQ">
+                                <rect key="frame" x="16" y="72" width="331" height="196"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ktw-Et-ucB">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PV7-vr-zTt">
+                                <rect key="frame" x="16" y="72" width="331" height="196"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nKo-3e-nU6">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HwF-GB-xcP" secondAttribute="trailing" constant="42" id="2hl-bE-NzL"/>
+                            <constraint firstAttribute="trailing" secondItem="PV7-vr-zTt" secondAttribute="trailing" constant="16" id="A1Y-Ku-JQv"/>
+                            <constraint firstItem="PV7-vr-zTt" firstAttribute="top" secondItem="HwF-GB-xcP" secondAttribute="bottom" constant="16" id="I2W-M3-ohk"/>
+                            <constraint firstItem="PV7-vr-zTt" firstAttribute="leading" secondItem="9Ui-i3-7Fl" secondAttribute="leading" constant="16" id="JBz-yW-TCv"/>
+                            <constraint firstAttribute="bottom" secondItem="Vrn-oQ-OOQ" secondAttribute="bottom" id="OYZ-16-2sq"/>
+                            <constraint firstItem="Vrn-oQ-OOQ" firstAttribute="leading" secondItem="9Ui-i3-7Fl" secondAttribute="leading" constant="16" id="djq-sf-pjB"/>
+                            <constraint firstItem="Vrn-oQ-OOQ" firstAttribute="top" secondItem="HwF-GB-xcP" secondAttribute="bottom" constant="16" id="hl7-JX-pdn"/>
+                            <constraint firstAttribute="trailing" secondItem="Vrn-oQ-OOQ" secondAttribute="trailing" constant="16" id="prk-0W-N9t"/>
+                            <constraint firstAttribute="bottom" secondItem="PV7-vr-zTt" secondAttribute="bottom" id="r5X-7T-3cx"/>
+                            <constraint firstItem="HwF-GB-xcP" firstAttribute="leading" secondItem="9Ui-i3-7Fl" secondAttribute="leading" constant="42" id="tng-nS-Ej7"/>
+                            <constraint firstItem="HwF-GB-xcP" firstAttribute="top" secondItem="9Ui-i3-7Fl" secondAttribute="top" constant="16" id="wfp-yc-9Zd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9Ui-i3-7Fl" secondAttribute="bottom" id="34l-Yg-eMS"/>
+                <constraint firstItem="9Ui-i3-7Fl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3v1-cc-tvB"/>
+                <constraint firstItem="9Ui-i3-7Fl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e0x-eK-gPX"/>
+                <constraint firstAttribute="trailing" secondItem="9Ui-i3-7Fl" secondAttribute="trailing" id="rQS-lN-dqA"/>
+            </constraints>
+            <size key="customSize" width="363" height="268"/>
+            <connections>
+                <outlet property="collectionViewFilmography" destination="Vrn-oQ-OOQ" id="iU9-TC-LH9"/>
+                <outlet property="collectionViewPhoto" destination="PV7-vr-zTt" id="1PV-I3-9ym"/>
+                <outlet property="filmographyBtn" destination="Evl-Pq-Axq" id="10k-Ez-4hr"/>
+                <outlet property="photoBtn" destination="vRY-cy-Mbd" id="07z-Mv-fgH"/>
+            </connections>
+            <point key="canvasLocation" x="272.51908396946561" y="64.08450704225352"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BGButtonPhoto" width="158" height="40"/>
+        <image name="BGPhotoOrFilmography" width="292.33334350585938" height="40.333332061767578"/>
+    </resources>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+        <array key="Quicksand SemiBold.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InStarringCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="177"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="177"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgE-Kr-yeM">
+                        <rect key="frame" x="0.0" y="0.0" width="401" height="177"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGPopularPeople" translatesAutoresizingMaskIntoConstraints="NO" id="rhG-cc-3dY">
+                                <rect key="frame" x="0.0" y="0.0" width="401" height="177"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WFh-vF-GiM">
+                                <rect key="frame" x="16" y="60" width="57" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="5K5-2E-icj"/>
+                                    <constraint firstAttribute="width" constant="57" id="8pK-hw-Gqh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jev-Ts-N2r">
+                                <rect key="frame" x="81" y="65.666666666666671" width="304" height="45.666666666666671"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Videz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tua-RT-cEB">
+                                        <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 17, 2022 at 12:08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SE-Q1-nf5">
+                                        <rect key="frame" x="0.0" y="28" width="134.66666666666666" height="17.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                        <color key="textColor" red="0.80392158030000005" green="0.80392158030000005" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rhG-cc-3dY" secondAttribute="trailing" id="0Sc-ea-Imf"/>
+                            <constraint firstItem="WFh-vF-GiM" firstAttribute="leading" secondItem="OgE-Kr-yeM" secondAttribute="leading" constant="16" id="3EW-S9-ifZ"/>
+                            <constraint firstItem="jev-Ts-N2r" firstAttribute="centerY" secondItem="OgE-Kr-yeM" secondAttribute="centerY" id="CZS-o1-eYq"/>
+                            <constraint firstItem="WFh-vF-GiM" firstAttribute="centerY" secondItem="OgE-Kr-yeM" secondAttribute="centerY" id="UlM-k8-Xnx"/>
+                            <constraint firstAttribute="trailing" secondItem="jev-Ts-N2r" secondAttribute="trailing" constant="16" id="cZl-0s-NiV"/>
+                            <constraint firstItem="rhG-cc-3dY" firstAttribute="top" secondItem="OgE-Kr-yeM" secondAttribute="top" id="dNi-kg-t7X"/>
+                            <constraint firstItem="jev-Ts-N2r" firstAttribute="leading" secondItem="WFh-vF-GiM" secondAttribute="trailing" constant="8" id="dQF-ii-K8W"/>
+                            <constraint firstItem="rhG-cc-3dY" firstAttribute="leading" secondItem="OgE-Kr-yeM" secondAttribute="leading" id="q7M-p0-UzL"/>
+                            <constraint firstAttribute="bottom" secondItem="rhG-cc-3dY" secondAttribute="bottom" id="xpE-bk-dEN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OgE-Kr-yeM" secondAttribute="trailing" id="5yo-kp-0gM"/>
+                <constraint firstItem="OgE-Kr-yeM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ltd-kJ-OE3"/>
+                <constraint firstAttribute="bottom" secondItem="OgE-Kr-yeM" secondAttribute="bottom" id="Yqa-Q3-ThO"/>
+                <constraint firstItem="OgE-Kr-yeM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fus-RL-2Oz"/>
+            </constraints>
+            <size key="customSize" width="401" height="177"/>
+            <connections>
+                <outlet property="departMentLbl" destination="7SE-Q1-nf5" id="gAJ-oi-se2"/>
+                <outlet property="imageActor" destination="WFh-vF-GiM" id="iOZ-GG-9OZ"/>
+                <outlet property="nameActorLbl" destination="Tua-RT-cEB" id="iM6-Jt-6J2"/>
+            </connections>
+            <point key="canvasLocation" x="397.70992366412213" y="33.450704225352112"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BGPopularPeople" width="327" height="89"/>
+    </resources>
+</document>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="manrope-medium.ttf">
+            <string>Manrope-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DescriptionTvCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="567" height="236"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="567" height="236"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cl-75-YRH">
+                        <rect key="frame" x="0.0" y="0.0" width="567" height="236"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pd8-HR-XX8">
+                                <rect key="frame" x="16" y="0.0" width="551" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ozC-kK-ddO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="25l-65-aTk">
+                                <rect key="frame" x="16" y="30" width="535" height="206"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TUB-0m-1iw">
+                                        <rect key="frame" x="0.0" y="0.0" width="535" height="70"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Qbu-mW-Lcc"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2y-5D-9O4">
+                                        <rect key="frame" x="482" y="191" width="53" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="PiE-hz-VYd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="12"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="See More"/>
+                                        <connections>
+                                            <action selector="seeMoreBioBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="XZh-Xe-pIM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TUB-0m-1iw" firstAttribute="leading" secondItem="25l-65-aTk" secondAttribute="leading" id="4hF-Zs-zoO"/>
+                                    <constraint firstAttribute="trailing" secondItem="TUB-0m-1iw" secondAttribute="trailing" id="Wgk-4i-LcT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="25l-65-aTk" secondAttribute="trailing" constant="16" id="0qB-Rn-MaK"/>
+                            <constraint firstAttribute="trailing" secondItem="Pd8-HR-XX8" secondAttribute="trailing" id="AGu-gj-gyC"/>
+                            <constraint firstItem="Pd8-HR-XX8" firstAttribute="top" secondItem="7cl-75-YRH" secondAttribute="top" id="MMc-dE-Asu"/>
+                            <constraint firstItem="25l-65-aTk" firstAttribute="top" secondItem="Pd8-HR-XX8" secondAttribute="bottom" id="anI-pr-9t8"/>
+                            <constraint firstItem="Pd8-HR-XX8" firstAttribute="leading" secondItem="7cl-75-YRH" secondAttribute="leading" constant="16" id="bbw-Ha-vKm"/>
+                            <constraint firstAttribute="bottom" secondItem="25l-65-aTk" secondAttribute="bottom" id="fFh-lz-GLX"/>
+                            <constraint firstItem="25l-65-aTk" firstAttribute="leading" secondItem="7cl-75-YRH" secondAttribute="leading" constant="16" id="rga-8L-0E1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7cl-75-YRH" secondAttribute="bottom" id="QIW-3E-nWX"/>
+                <constraint firstItem="7cl-75-YRH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TUr-Xx-3yK"/>
+                <constraint firstAttribute="trailing" secondItem="7cl-75-YRH" secondAttribute="trailing" id="eKi-u6-Dbq"/>
+                <constraint firstItem="7cl-75-YRH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oMr-gM-XQM"/>
+            </constraints>
+            <size key="customSize" width="567" height="236"/>
+            <connections>
+                <outlet property="descriptionTextView" destination="TUB-0m-1iw" id="5ln-OY-qXU"/>
+                <outlet property="heightBio" destination="Qbu-mW-Lcc" id="0iL-Q2-18l"/>
+                <outlet property="seeAllBtn" destination="A2y-5D-9O4" id="48g-e1-m7e"/>
+            </connections>
+            <point key="canvasLocation" x="524.4274809160305" y="-129.57746478873241"/>
+        </collectionViewCell>
+    </objects>
+</document>

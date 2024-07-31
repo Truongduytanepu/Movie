@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="manrope-semibold.ttf">
+            <string>Manrope-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlanDetailVC" customModule="Moffy" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="MXL-Tv-cPN" id="462-lG-k0O"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="vpb-1i-iqT">
+                    <rect key="frame" x="0.0" y="-2" width="393" height="854"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNn-wV-m1h">
+                    <rect key="frame" x="0.0" y="59" width="393" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OM-tA-GET">
+                            <rect key="frame" x="145" y="36" width="105.66666666666666" height="29"/>
+                            <fontDescription key="fontDescription" name="Manrope-SemiBold" family="Manrope" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIL-60-Wsp">
+                            <rect key="frame" x="16" y="3" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="PIL-60-Wsp" secondAttribute="height" id="T61-Dl-2be"/>
+                                <constraint firstAttribute="height" constant="24" id="Tyu-ZQ-WkJ"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="Back 1" title=""/>
+                            <connections>
+                                <action selector="backScreen:" destination="-1" eventType="touchUpInside" id="CQi-Im-COJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpt-2J-Ohl">
+                            <rect key="frame" x="353" y="3" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="BJL-ZZ-QQh"/>
+                                <constraint firstAttribute="width" secondItem="kpt-2J-Ohl" secondAttribute="height" id="MYy-Xk-EN3"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="Note" title=""/>
+                            <connections>
+                                <action selector="editPlanBtnTapped:" destination="-1" eventType="touchUpInside" id="swc-gF-kki"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="PIL-60-Wsp" firstAttribute="centerY" secondItem="TNn-wV-m1h" secondAttribute="centerY" id="Rh6-w6-oZP"/>
+                        <constraint firstItem="2OM-tA-GET" firstAttribute="centerX" secondItem="TNn-wV-m1h" secondAttribute="centerX" id="Xmb-Az-rM7"/>
+                        <constraint firstAttribute="trailing" secondItem="kpt-2J-Ohl" secondAttribute="trailing" constant="16" id="YpJ-vL-z12"/>
+                        <constraint firstItem="2OM-tA-GET" firstAttribute="centerY" secondItem="TNn-wV-m1h" secondAttribute="centerY" id="gEW-1I-bTC"/>
+                        <constraint firstItem="PIL-60-Wsp" firstAttribute="leading" secondItem="TNn-wV-m1h" secondAttribute="leading" constant="16" id="lhP-A5-c0f"/>
+                        <constraint firstItem="kpt-2J-Ohl" firstAttribute="centerY" secondItem="TNn-wV-m1h" secondAttribute="centerY" id="mfa-6F-A79"/>
+                        <constraint firstAttribute="height" constant="30" id="v7o-ru-3q4"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MXL-Tv-cPN">
+                    <rect key="frame" x="0.0" y="105" width="393" height="747"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PiQ-B0-0d9">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="MXL-Tv-cPN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="465-R8-g6z"/>
+                <constraint firstAttribute="trailing" secondItem="TNn-wV-m1h" secondAttribute="trailing" id="76I-fy-qsh"/>
+                <constraint firstItem="TNn-wV-m1h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DfB-v6-nu0"/>
+                <constraint firstAttribute="bottom" secondItem="MXL-Tv-cPN" secondAttribute="bottom" id="Fib-5c-KhJ"/>
+                <constraint firstItem="vpb-1i-iqT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-2" id="GCc-hR-boS"/>
+                <constraint firstItem="TNn-wV-m1h" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="HG9-6A-ge7"/>
+                <constraint firstItem="vpb-1i-iqT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MeX-cv-Oeo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vpb-1i-iqT" secondAttribute="trailing" id="Q2J-he-fp2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MXL-Tv-cPN" secondAttribute="trailing" id="Tsc-ht-9Y6"/>
+                <constraint firstAttribute="bottom" secondItem="vpb-1i-iqT" secondAttribute="bottom" id="ijn-Cp-JHZ"/>
+                <constraint firstItem="MXL-Tv-cPN" firstAttribute="top" secondItem="TNn-wV-m1h" secondAttribute="bottom" constant="16" id="q7a-UU-mLe"/>
+            </constraints>
+            <point key="canvasLocation" x="89.312977099236633" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BG" width="375" height="812"/>
+        <image name="Back 1" width="24" height="24.333333969116211"/>
+        <image name="Note" width="20.666666030883789" height="21"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

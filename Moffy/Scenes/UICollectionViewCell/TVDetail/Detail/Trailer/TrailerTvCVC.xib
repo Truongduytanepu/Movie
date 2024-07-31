@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TrailerTvCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="186"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="186"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jpe-q8-lgW">
+                        <rect key="frame" x="0.0" y="0.0" width="431" height="186"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trailer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzQ-b9-eAv">
+                                <rect key="frame" x="16.000000000000004" y="0.0" width="56.333333333333343" height="22.666666666666668"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XZj-eO-Kps">
+                                <rect key="frame" x="16" y="38.666666666666671" width="415" height="147.33333333333331"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N1E-XQ-HQ8">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mzQ-b9-eAv" firstAttribute="leading" secondItem="Jpe-q8-lgW" secondAttribute="leading" constant="16" id="16b-bH-ZEs"/>
+                            <constraint firstAttribute="trailing" secondItem="XZj-eO-Kps" secondAttribute="trailing" id="221-zK-EC3"/>
+                            <constraint firstAttribute="bottom" secondItem="XZj-eO-Kps" secondAttribute="bottom" id="4sY-sG-Mje"/>
+                            <constraint firstItem="XZj-eO-Kps" firstAttribute="leading" secondItem="Jpe-q8-lgW" secondAttribute="leading" constant="16" id="THh-qF-SZQ"/>
+                            <constraint firstItem="XZj-eO-Kps" firstAttribute="top" secondItem="mzQ-b9-eAv" secondAttribute="bottom" constant="16" id="WBo-6C-me6"/>
+                            <constraint firstItem="mzQ-b9-eAv" firstAttribute="top" secondItem="Jpe-q8-lgW" secondAttribute="top" id="gnt-nc-bxh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Jpe-q8-lgW" secondAttribute="bottom" id="FdU-dt-lzu"/>
+                <constraint firstItem="Jpe-q8-lgW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KJJ-oN-Xcs"/>
+                <constraint firstItem="Jpe-q8-lgW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dwY-jK-ngv"/>
+                <constraint firstAttribute="trailing" secondItem="Jpe-q8-lgW" secondAttribute="trailing" id="rxe-DU-lCw"/>
+            </constraints>
+            <size key="customSize" width="431" height="186"/>
+            <connections>
+                <outlet property="collectionView" destination="XZj-eO-Kps" id="4cs-to-TVw"/>
+            </connections>
+            <point key="canvasLocation" x="420.61068702290072" y="35.211267605633807"/>
+        </collectionViewCell>
+    </objects>
+</document>

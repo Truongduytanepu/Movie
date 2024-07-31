@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailVC" customModule="Moffy" customModuleProvider="target">
+            <connections>
+                <outlet property="bannerAdView" destination="PEa-RX-F00" id="arU-Xe-foE"/>
+                <outlet property="collectionView" destination="V2U-9p-MRd" id="QcD-RE-uua"/>
+                <outlet property="favoriteBtn" destination="LgW-rC-pdv" id="GDQ-w7-zTY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="y8R-Mp-1J1">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Tqo-F2-XjE">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="V2U-9p-MRd">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="792"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hNO-BB-Pen">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEa-RX-F00" customClass="BannerAdMobView" customModule="AdMobManager">
+                            <rect key="frame" x="0.0" y="792" width="393" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="Sdi-Fy-ZjU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXd-gh-fss">
+                    <rect key="frame" x="0.0" y="63" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJw-eH-1uL">
+                            <rect key="frame" x="16" y="10" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="JVR-6B-3xf"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="Back 1" title=""/>
+                            <connections>
+                                <action selector="backNavigationBtnTapped:" destination="-1" eventType="touchUpInside" id="YEi-Db-5WY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgW-rC-pdv">
+                            <rect key="frame" x="353" y="10" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="JPB-XL-zhl"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="UnFavotite" title=""/>
+                            <connections>
+                                <action selector="favoriteMovieBtnTapped:" destination="-1" eventType="touchUpInside" id="mMM-fg-Gmd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="BUH-m8-jSa"/>
+                        <constraint firstAttribute="bottom" secondItem="LgW-rC-pdv" secondAttribute="bottom" constant="10" id="QAG-Ur-p6W"/>
+                        <constraint firstAttribute="bottom" secondItem="JJw-eH-1uL" secondAttribute="bottom" constant="10" id="S9Y-Vz-8c9"/>
+                        <constraint firstItem="JJw-eH-1uL" firstAttribute="leading" secondItem="MXd-gh-fss" secondAttribute="leading" constant="16" id="Z3H-lS-nXu"/>
+                        <constraint firstItem="JJw-eH-1uL" firstAttribute="top" secondItem="MXd-gh-fss" secondAttribute="top" constant="10" id="ZWz-mz-H5P"/>
+                        <constraint firstItem="LgW-rC-pdv" firstAttribute="top" secondItem="MXd-gh-fss" secondAttribute="top" constant="10" id="n5M-rI-Hif"/>
+                        <constraint firstAttribute="trailing" secondItem="LgW-rC-pdv" secondAttribute="trailing" constant="16" id="uBf-Eq-Ujg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y8R-Mp-1J1" secondAttribute="trailing" id="AWw-0H-UK2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MXd-gh-fss" secondAttribute="trailing" id="Eau-SP-sN9"/>
+                <constraint firstAttribute="bottom" secondItem="y8R-Mp-1J1" secondAttribute="bottom" id="KDW-aT-d1I"/>
+                <constraint firstItem="Tqo-F2-XjE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ksg-gR-ZZ3"/>
+                <constraint firstItem="MXd-gh-fss" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="4" id="RQB-ob-Xqm"/>
+                <constraint firstItem="y8R-Mp-1J1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="V36-29-8fl"/>
+                <constraint firstItem="Tqo-F2-XjE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Wwj-05-7X8"/>
+                <constraint firstItem="Tqo-F2-XjE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="bqP-x3-OFj"/>
+                <constraint firstItem="y8R-Mp-1J1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mcQ-HO-SdX"/>
+                <constraint firstAttribute="bottom" secondItem="Tqo-F2-XjE" secondAttribute="bottom" id="tHG-hA-tlf"/>
+                <constraint firstItem="MXd-gh-fss" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vhz-23-6uq"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BG" width="375" height="812"/>
+        <image name="Back 1" width="24" height="24.333333969116211"/>
+        <image name="UnFavotite" width="40" height="40.333332061767578"/>
+    </resources>
+</document>

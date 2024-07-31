@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+        <array key="Quicksand SemiBold.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FavoriteMovieCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="223" height="270"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="223" height="270"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3g-uc-h6q">
+                        <rect key="frame" x="0.0" y="0.0" width="223" height="270"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N7i-nt-3Tf">
+                                <rect key="frame" x="0.0" y="0.0" width="223" height="270"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzh-pj-mPY">
+                                <rect key="frame" x="189" y="10" width="24" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="I8W-Gq-QFu"/>
+                                    <constraint firstAttribute="height" constant="30" id="oV7-iv-grc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Favorite" title=""/>
+                                <connections>
+                                    <action selector="favoriteBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="aWc-6M-UI5"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BottomBG" translatesAutoresizingMaskIntoConstraints="NO" id="vIZ-k4-6jB">
+                                <rect key="frame" x="-2" y="175" width="225" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="DDD-xB-TpV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Myg-3r-JQd">
+                                <rect key="frame" x="10" y="238.33333333333334" width="203" height="12.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIy-Gq-cjE">
+                                <rect key="frame" x="10" y="215.66666666666666" width="203" height="18.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="N7i-nt-3Tf" secondAttribute="trailing" id="5dS-PZ-MmL"/>
+                            <constraint firstAttribute="bottom" secondItem="Myg-3r-JQd" secondAttribute="bottom" constant="19" id="BID-aO-uO8"/>
+                            <constraint firstItem="qIy-Gq-cjE" firstAttribute="leading" secondItem="L3g-uc-h6q" secondAttribute="leading" constant="10" id="BaZ-t5-unU"/>
+                            <constraint firstAttribute="trailing" secondItem="Myg-3r-JQd" secondAttribute="trailing" constant="10" id="Dkr-MU-Dxg"/>
+                            <constraint firstItem="N7i-nt-3Tf" firstAttribute="leading" secondItem="L3g-uc-h6q" secondAttribute="leading" id="Ej9-2s-qpQ"/>
+                            <constraint firstItem="lzh-pj-mPY" firstAttribute="top" secondItem="L3g-uc-h6q" secondAttribute="top" constant="10" id="Mpa-a9-NF7"/>
+                            <constraint firstItem="vIZ-k4-6jB" firstAttribute="leading" secondItem="L3g-uc-h6q" secondAttribute="leading" constant="-2" id="SdD-je-qn7"/>
+                            <constraint firstItem="N7i-nt-3Tf" firstAttribute="top" secondItem="L3g-uc-h6q" secondAttribute="top" id="cJf-l7-nYT"/>
+                            <constraint firstAttribute="trailing" secondItem="qIy-Gq-cjE" secondAttribute="trailing" constant="10" id="dcy-cr-89O"/>
+                            <constraint firstAttribute="trailing" secondItem="vIZ-k4-6jB" secondAttribute="trailing" id="emu-a0-bVC"/>
+                            <constraint firstAttribute="trailing" secondItem="lzh-pj-mPY" secondAttribute="trailing" constant="10" id="hI2-pO-5ub"/>
+                            <constraint firstItem="Myg-3r-JQd" firstAttribute="top" secondItem="qIy-Gq-cjE" secondAttribute="bottom" constant="4" id="nqt-0V-0yw"/>
+                            <constraint firstAttribute="bottom" secondItem="N7i-nt-3Tf" secondAttribute="bottom" id="ntg-1C-BnG"/>
+                            <constraint firstItem="Myg-3r-JQd" firstAttribute="leading" secondItem="L3g-uc-h6q" secondAttribute="leading" constant="10" id="tGH-bG-7OY"/>
+                            <constraint firstAttribute="bottom" secondItem="vIZ-k4-6jB" secondAttribute="bottom" id="yG7-zt-mwv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="L3g-uc-h6q" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ny6-P5-jT3"/>
+                <constraint firstItem="L3g-uc-h6q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WNj-TU-CB8"/>
+                <constraint firstAttribute="bottom" secondItem="L3g-uc-h6q" secondAttribute="bottom" id="YMX-Z3-JrJ"/>
+                <constraint firstAttribute="trailing" secondItem="L3g-uc-h6q" secondAttribute="trailing" id="lWS-Te-rKC"/>
+            </constraints>
+            <size key="customSize" width="223" height="270"/>
+            <connections>
+                <outlet property="favoriteBtn" destination="lzh-pj-mPY" id="ziE-QA-mW9"/>
+                <outlet property="genreMovieLbl" destination="Myg-3r-JQd" id="nBR-g6-z2L"/>
+                <outlet property="imageMovie" destination="N7i-nt-3Tf" id="WNI-Pr-otC"/>
+                <outlet property="nameMovieLbl" destination="qIy-Gq-cjE" id="R8X-fe-5k4"/>
+            </connections>
+            <point key="canvasLocation" x="261.83206106870227" y="64.788732394366207"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BottomBG" width="165.33332824707031" height="95.333335876464844"/>
+        <image name="Favorite" width="40" height="40.333332061767578"/>
+    </resources>
+</document>

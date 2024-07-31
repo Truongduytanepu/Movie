@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="manrope-light.ttf">
+            <string>Manrope-Light</string>
+        </array>
+        <array key="manrope-semibold.ttf">
+            <string>Manrope-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PopularDetailCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="227" height="308"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="227" height="308"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2x-c6-xRe">
+                        <rect key="frame" x="0.0" y="0.0" width="227" height="308"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundCover" translatesAutoresizingMaskIntoConstraints="NO" id="Ams-1z-vZB">
+                                <rect key="frame" x="0.0" y="0.0" width="227" height="308"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BottomBG" translatesAutoresizingMaskIntoConstraints="NO" id="Gnp-qu-lmA">
+                                <rect key="frame" x="-2" y="140" width="229" height="168"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="0dy-DQ-jST"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fBv-Nc-XcD">
+                                <rect key="frame" x="10" y="226.33333333333334" width="207" height="49.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="King Kong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuU-0W-9ym">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="33"/>
+                                        <fontDescription key="fontDescription" name="Manrope-SemiBold" family="Manrope" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fantasy - Family - 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzQ-Fz-SnT">
+                                        <rect key="frame" x="0.0" y="32.999999999999972" width="207" height="16.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Manrope-Light" family="Manrope" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="c45-4i-y2s" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="53.666666666666657" y="284" width="120" height="14"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="idf-of-Gya"/>
+                                    <constraint firstAttribute="height" constant="14" id="puH-K9-wm6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="StarFill"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarUnFill"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="c45-4i-y2s" secondAttribute="bottom" constant="10" id="97r-cR-Prr"/>
+                            <constraint firstAttribute="trailing" secondItem="Ams-1z-vZB" secondAttribute="trailing" id="F9c-sR-FDU"/>
+                            <constraint firstAttribute="trailing" secondItem="Gnp-qu-lmA" secondAttribute="trailing" id="RAJ-0r-Ay1"/>
+                            <constraint firstItem="c45-4i-y2s" firstAttribute="top" secondItem="fBv-Nc-XcD" secondAttribute="bottom" constant="8" id="XHz-UM-0VN"/>
+                            <constraint firstItem="fBv-Nc-XcD" firstAttribute="leading" secondItem="Z2x-c6-xRe" secondAttribute="leading" constant="10" id="XMY-oM-aR5"/>
+                            <constraint firstItem="c45-4i-y2s" firstAttribute="centerX" secondItem="Z2x-c6-xRe" secondAttribute="centerX" id="cdA-ZZ-K4z"/>
+                            <constraint firstItem="Ams-1z-vZB" firstAttribute="leading" secondItem="Z2x-c6-xRe" secondAttribute="leading" id="hn8-fo-zSS"/>
+                            <constraint firstAttribute="bottom" secondItem="Gnp-qu-lmA" secondAttribute="bottom" id="jCy-Ka-l5u"/>
+                            <constraint firstItem="Ams-1z-vZB" firstAttribute="top" secondItem="Z2x-c6-xRe" secondAttribute="top" id="lcB-5D-Fgy"/>
+                            <constraint firstAttribute="trailing" secondItem="fBv-Nc-XcD" secondAttribute="trailing" constant="10" id="llm-1R-KyH"/>
+                            <constraint firstAttribute="bottom" secondItem="Ams-1z-vZB" secondAttribute="bottom" id="u4M-2i-dGJ"/>
+                            <constraint firstItem="Gnp-qu-lmA" firstAttribute="leading" secondItem="Z2x-c6-xRe" secondAttribute="leading" constant="-2" id="wm1-y0-K9P"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="28"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Z2x-c6-xRe" secondAttribute="bottom" id="5Q2-c5-m0a"/>
+                <constraint firstItem="Z2x-c6-xRe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CnU-YO-n8w"/>
+                <constraint firstItem="Z2x-c6-xRe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JzE-P2-14I"/>
+                <constraint firstAttribute="trailing" secondItem="Z2x-c6-xRe" secondAttribute="trailing" id="YmG-1E-byQ"/>
+            </constraints>
+            <size key="customSize" width="349" height="360"/>
+            <connections>
+                <outlet property="genresAndYearLbl" destination="pzQ-Fz-SnT" id="bwK-UW-NBZ"/>
+                <outlet property="imageMovie" destination="Ams-1z-vZB" id="hrA-lj-y1n"/>
+                <outlet property="nameMovieLbl" destination="GuU-0W-9ym" id="fEn-DT-99g"/>
+                <outlet property="ratingView" destination="c45-4i-y2s" id="Qmq-2r-gis"/>
+            </connections>
+            <point key="canvasLocation" x="367.17557251908397" y="128.16901408450704"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BackgroundCover" width="343" height="196.33332824707031"/>
+        <image name="BottomBG" width="165.33332824707031" height="95.333335876464844"/>
+        <image name="StarFill" width="14.333333015441895" height="14"/>
+        <image name="StarUnFill" width="14.333333015441895" height="14"/>
+    </resources>
+</document>

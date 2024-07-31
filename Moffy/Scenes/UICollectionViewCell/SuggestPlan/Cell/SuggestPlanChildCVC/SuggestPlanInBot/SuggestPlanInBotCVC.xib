@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="manrope-light.ttf">
+            <string>Manrope-Light</string>
+        </array>
+        <array key="manrope-semibold.ttf">
+            <string>Manrope-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SuggestPlanInBotCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="202"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="202"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Gg-Gg-fHX">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="202"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background1" translatesAutoresizingMaskIntoConstraints="NO" id="oRM-zp-XjC">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="132"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2J-gD-LOC">
+                                <rect key="frame" x="110" y="8" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="3S0-u6-Opd"/>
+                                    <constraint firstAttribute="width" secondItem="L2J-gD-LOC" secondAttribute="height" id="8Cn-VV-68I"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="EditButton"/>
+                                <connections>
+                                    <action selector="editPlanBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="dkv-ey-IIx"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="d5q-n3-GiH" userLabel="progessView">
+                                <rect key="frame" x="4" y="126" width="142" height="4"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleAspectFill" verticalHuggingPriority="750" progress="0.59999999999999998" progressImage="LineProgress" translatesAutoresizingMaskIntoConstraints="NO" id="cuM-Ml-YNA">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="4"/>
+                                        <color key="backgroundColor" red="0.52941179279999995" green="0.52941179279999995" blue="0.52549022440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </progressView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cuM-Ml-YNA" secondAttribute="trailing" id="5yo-lD-QSG"/>
+                                    <constraint firstItem="cuM-Ml-YNA" firstAttribute="top" secondItem="d5q-n3-GiH" secondAttribute="top" id="POM-dP-Bz1"/>
+                                    <constraint firstItem="cuM-Ml-YNA" firstAttribute="leading" secondItem="d5q-n3-GiH" secondAttribute="leading" id="rmm-3o-VTc"/>
+                                    <constraint firstAttribute="bottom" secondItem="cuM-Ml-YNA" secondAttribute="bottom" id="uHf-2J-caQ"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="98a-7T-VHJ" userLabel="StackViewTime">
+                                <rect key="frame" x="8" y="170.66666666666666" width="134" height="23.333333333333343"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2aF-l8-wIy">
+                                        <rect key="frame" x="0.0" y="0.0" width="75.333333333333329" height="23.333333333333332"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Cu0-nW-Cqv">
+                                                <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="23.333333333333332"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start : 15/07/2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FP1-5E-7F3" userLabel="StartTime">
+                                                        <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="9.6666666666666661"/>
+                                                        <fontDescription key="fontDescription" name="Manrope-Light" family="Manrope" pointSize="8"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start : 15/07/2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CO8-dJ-PFB" userLabel="EndTime">
+                                                        <rect key="frame" x="0.0" y="13.666666666666686" width="64.333333333333329" height="9.6666666666666643"/>
+                                                        <fontDescription key="fontDescription" name="Manrope-Light" family="Manrope" pointSize="8"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 12" translatesAutoresizingMaskIntoConstraints="NO" id="CKE-U9-cIU">
+                                                <rect key="frame" x="74.333333333333329" y="0.0" width="1" height="23.333333333333332"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1" id="GiH-Uq-Le8"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16h35m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vZ-nO-Nh2">
+                                        <rect key="frame" x="76.333333333333329" y="6.3333333333333428" width="57.666666666666671" height="11"/>
+                                        <fontDescription key="fontDescription" name="Manrope-Light" family="Manrope" pointSize="8"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eM-ai-ymE" userLabel="namePlan">
+                                <rect key="frame" x="8" y="134" width="134" height="15.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Manrope-SemiBold" family="Manrope" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2/6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAT-V8-JJ4">
+                                <rect key="frame" x="133.33333333333334" y="111" width="12.666666666666657" height="11"/>
+                                <fontDescription key="fontDescription" name="Manrope-Light" family="Manrope" pointSize="8"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d5q-n3-GiH" firstAttribute="leading" secondItem="1Gg-Gg-fHX" secondAttribute="leading" constant="4" id="A58-Ct-Yrs"/>
+                            <constraint firstItem="9eM-ai-ymE" firstAttribute="top" secondItem="d5q-n3-GiH" secondAttribute="bottom" constant="4" id="DUo-JV-aIP"/>
+                            <constraint firstAttribute="bottom" secondItem="oRM-zp-XjC" secondAttribute="bottom" constant="70" id="Rri-Eh-gLs"/>
+                            <constraint firstAttribute="trailing" secondItem="d5q-n3-GiH" secondAttribute="trailing" constant="4" id="RsQ-jl-DgI"/>
+                            <constraint firstAttribute="trailing" secondItem="L2J-gD-LOC" secondAttribute="trailing" constant="8" id="SIg-ne-oKa"/>
+                            <constraint firstItem="98a-7T-VHJ" firstAttribute="leading" secondItem="1Gg-Gg-fHX" secondAttribute="leading" constant="8" id="StK-ZI-v9M"/>
+                            <constraint firstItem="98a-7T-VHJ" firstAttribute="top" secondItem="9eM-ai-ymE" secondAttribute="bottom" constant="21" id="Tc1-9S-oaG"/>
+                            <constraint firstItem="oRM-zp-XjC" firstAttribute="leading" secondItem="1Gg-Gg-fHX" secondAttribute="leading" id="Z2y-jH-PLv"/>
+                            <constraint firstAttribute="trailing" secondItem="dAT-V8-JJ4" secondAttribute="trailing" constant="4" id="asE-NW-MFU"/>
+                            <constraint firstItem="9eM-ai-ymE" firstAttribute="leading" secondItem="1Gg-Gg-fHX" secondAttribute="leading" constant="8" id="bev-tm-j1S"/>
+                            <constraint firstItem="9eM-ai-ymE" firstAttribute="top" secondItem="oRM-zp-XjC" secondAttribute="bottom" constant="2" id="hIZ-Q4-Lgq"/>
+                            <constraint firstItem="d5q-n3-GiH" firstAttribute="top" secondItem="dAT-V8-JJ4" secondAttribute="bottom" constant="4" id="jae-IS-Lgt"/>
+                            <constraint firstAttribute="trailing" secondItem="oRM-zp-XjC" secondAttribute="trailing" id="laU-0c-2sc"/>
+                            <constraint firstItem="oRM-zp-XjC" firstAttribute="top" secondItem="1Gg-Gg-fHX" secondAttribute="top" id="n0p-c7-Fov"/>
+                            <constraint firstAttribute="trailing" secondItem="9eM-ai-ymE" secondAttribute="trailing" constant="8" id="vSg-FS-knI"/>
+                            <constraint firstAttribute="bottom" secondItem="98a-7T-VHJ" secondAttribute="bottom" constant="8" id="x7m-1r-0WX"/>
+                            <constraint firstAttribute="trailing" secondItem="98a-7T-VHJ" secondAttribute="trailing" constant="8" id="y1o-Nk-CCD"/>
+                            <constraint firstItem="L2J-gD-LOC" firstAttribute="top" secondItem="1Gg-Gg-fHX" secondAttribute="top" constant="8" id="zmY-Oj-BJE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1Gg-Gg-fHX" secondAttribute="trailing" id="UWu-B2-8Q6"/>
+                <constraint firstItem="1Gg-Gg-fHX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eCm-u8-qa7"/>
+                <constraint firstAttribute="bottom" secondItem="1Gg-Gg-fHX" secondAttribute="bottom" id="jti-eT-xCF"/>
+                <constraint firstItem="1Gg-Gg-fHX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kym-Bo-Jpa"/>
+            </constraints>
+            <size key="customSize" width="150" height="192"/>
+            <connections>
+                <outlet property="endDateLbl" destination="CO8-dJ-PFB" id="0Gh-mv-md3"/>
+                <outlet property="imagePlan" destination="oRM-zp-XjC" id="jTK-lK-ZQi"/>
+                <outlet property="namePlanLbl" destination="9eM-ai-ymE" id="E5C-R5-gUf"/>
+                <outlet property="progressView" destination="cuM-Ml-YNA" id="Ge6-M9-K5N"/>
+                <outlet property="startDateLbl" destination="FP1-5E-7F3" id="Ny5-aT-sLm"/>
+                <outlet property="totalMovieLbl" destination="dAT-V8-JJ4" id="Dyn-kE-wQW"/>
+                <outlet property="totalTimeLbl" destination="1vZ-nO-Nh2" id="iy9-mb-MUx"/>
+                <outlet property="viewWrapper" destination="1Gg-Gg-fHX" id="YRg-Ci-Ayf"/>
+            </connections>
+            <point key="canvasLocation" x="148.09160305343511" y="42.95774647887324"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Background1" width="1125" height="2436"/>
+        <image name="EditButton" width="32" height="32.333332061767578"/>
+        <image name="Line 12" width="1.3333333730697632" height="23.333333969116211"/>
+        <image name="LineProgress" width="47" height="4"/>
+    </resources>
+</document>

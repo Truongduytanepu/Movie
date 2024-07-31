@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand SemiBold.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+        <array key="manrope-semibold.ttf">
+            <string>Manrope-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PopularTvCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="592" height="373"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="592" height="373"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Yi-Tc-BC1">
+                        <rect key="frame" x="0.0" y="0.0" width="592" height="373"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OxB-7a-yBB">
+                                <rect key="frame" x="0.0" y="0.0" width="592" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc7-1k-y4w">
+                                        <rect key="frame" x="16" y="0.0" width="103" height="34"/>
+                                        <fontDescription key="fontDescription" name="Manrope-SemiBold" family="Manrope" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHs-zM-Pn4">
+                                        <rect key="frame" x="523.66666666666663" y="8" width="52.333333333333371" height="18"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="More " image="MoreRight">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="seeAllPopularBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="r4s-4g-DTp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fc7-1k-y4w" secondAttribute="bottom" id="4BT-S1-Wkt"/>
+                                    <constraint firstAttribute="height" constant="34" id="I1m-2W-OXK"/>
+                                    <constraint firstItem="fc7-1k-y4w" firstAttribute="top" secondItem="OxB-7a-yBB" secondAttribute="top" id="M2Z-Re-Lrl"/>
+                                    <constraint firstAttribute="trailing" secondItem="yHs-zM-Pn4" secondAttribute="trailing" constant="16" id="S1O-nP-OuQ"/>
+                                    <constraint firstItem="yHs-zM-Pn4" firstAttribute="centerY" secondItem="fc7-1k-y4w" secondAttribute="centerY" id="fCC-Tp-qGF"/>
+                                    <constraint firstItem="fc7-1k-y4w" firstAttribute="leading" secondItem="OxB-7a-yBB" secondAttribute="leading" constant="16" id="lG0-u6-EFL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRa-pN-AG0" customClass="FSPagerView" customModule="FSPagerView">
+                                <rect key="frame" x="0.0" y="46" width="592" height="327"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BRa-pN-AG0" firstAttribute="leading" secondItem="1Yi-Tc-BC1" secondAttribute="leading" id="7da-jC-8xE"/>
+                            <constraint firstItem="BRa-pN-AG0" firstAttribute="top" secondItem="OxB-7a-yBB" secondAttribute="bottom" constant="12" id="9Lf-K7-vLh"/>
+                            <constraint firstAttribute="bottom" secondItem="BRa-pN-AG0" secondAttribute="bottom" id="WJs-B0-ats"/>
+                            <constraint firstAttribute="trailing" secondItem="OxB-7a-yBB" secondAttribute="trailing" id="WV3-A8-I6f"/>
+                            <constraint firstItem="OxB-7a-yBB" firstAttribute="leading" secondItem="1Yi-Tc-BC1" secondAttribute="leading" id="gX6-oE-WIB"/>
+                            <constraint firstItem="OxB-7a-yBB" firstAttribute="top" secondItem="1Yi-Tc-BC1" secondAttribute="top" id="t2G-Vb-T9d"/>
+                            <constraint firstAttribute="trailing" secondItem="BRa-pN-AG0" secondAttribute="trailing" id="tbd-8d-r3e"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1Yi-Tc-BC1" secondAttribute="trailing" id="RIe-H3-e3n"/>
+                <constraint firstAttribute="bottom" secondItem="1Yi-Tc-BC1" secondAttribute="bottom" id="j5A-es-zWl"/>
+                <constraint firstItem="1Yi-Tc-BC1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qU0-Mu-PAb"/>
+                <constraint firstItem="1Yi-Tc-BC1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uMA-fK-wKJ"/>
+            </constraints>
+            <size key="customSize" width="592" height="373"/>
+            <connections>
+                <outlet property="pagerView" destination="BRa-pN-AG0" id="QJw-KH-P0v"/>
+            </connections>
+            <point key="canvasLocation" x="-30.534351145038165" y="101.05633802816902"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="MoreRight" width="14.333333015441895" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GenresTvCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DlH-XV-fxH">
+                        <rect key="frame" x="0.0" y="0.0" width="197" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuggestCell" translatesAutoresizingMaskIntoConstraints="NO" id="yal-Bo-Ide">
+                                <rect key="frame" x="0.0" y="0.0" width="197" height="70"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xr-nL-q8I">
+                                <rect key="frame" x="10" y="21.333333333333329" width="177" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yal-Bo-Ide" firstAttribute="leading" secondItem="DlH-XV-fxH" secondAttribute="leading" id="1s7-RQ-r9Z"/>
+                            <constraint firstAttribute="trailing" secondItem="yal-Bo-Ide" secondAttribute="trailing" id="8Wn-1K-Lvf"/>
+                            <constraint firstItem="3xr-nL-q8I" firstAttribute="leading" secondItem="DlH-XV-fxH" secondAttribute="leading" constant="10" id="AZX-Wz-13F"/>
+                            <constraint firstItem="3xr-nL-q8I" firstAttribute="centerY" secondItem="DlH-XV-fxH" secondAttribute="centerY" id="FFD-MD-qpi"/>
+                            <constraint firstAttribute="bottom" secondItem="yal-Bo-Ide" secondAttribute="bottom" id="J9W-ey-dO7"/>
+                            <constraint firstItem="yal-Bo-Ide" firstAttribute="top" secondItem="DlH-XV-fxH" secondAttribute="top" id="jCc-ib-zVl"/>
+                            <constraint firstAttribute="trailing" secondItem="3xr-nL-q8I" secondAttribute="trailing" constant="10" id="tHs-aC-zRt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DlH-XV-fxH" secondAttribute="bottom" id="8n2-8k-0Ka"/>
+                <constraint firstAttribute="trailing" secondItem="DlH-XV-fxH" secondAttribute="trailing" id="OaS-Gt-QVA"/>
+                <constraint firstItem="DlH-XV-fxH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ra4-uU-qH2"/>
+                <constraint firstItem="DlH-XV-fxH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Yhn-kI-IgU"/>
+            </constraints>
+            <size key="customSize" width="197" height="70"/>
+            <connections>
+                <outlet property="genresBGImage" destination="yal-Bo-Ide" id="qXw-bk-wXY"/>
+                <outlet property="genresLbl" destination="3xr-nL-q8I" id="oGM-jo-FnQ"/>
+            </connections>
+            <point key="canvasLocation" x="219.08396946564883" y="-5.6338028169014089"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="SuggestCell" width="141.33332824707031" height="48"/>
+    </resources>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreatePlanVC" customModule="Moffy" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="cWK-D2-znb" id="5Pa-9Q-6dD"/>
+                <outlet property="customAdNativeView" destination="R8Z-Oh-9LZ" id="OlP-nR-tIg"/>
+                <outlet property="doneBtn" destination="VKS-SS-dU7" id="gU1-I2-uWc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="0Ym-Ys-mGw">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rD8-Fn-JLQ">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="730"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cWK-D2-znb">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="590"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="q8W-AS-WHb">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8Z-Oh-9LZ" customClass="CustomNativeAdView" customModule="Moffy" customModuleProvider="target">
+                            <rect key="frame" x="16" y="590" width="361" height="140"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="140" id="rT5-iI-CNq"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cWK-D2-znb" secondAttribute="trailing" id="5GX-m5-kYo"/>
+                        <constraint firstItem="R8Z-Oh-9LZ" firstAttribute="leading" secondItem="rD8-Fn-JLQ" secondAttribute="leading" constant="16" id="AC0-oC-m5O"/>
+                        <constraint firstItem="cWK-D2-znb" firstAttribute="leading" secondItem="rD8-Fn-JLQ" secondAttribute="leading" id="KJg-SP-nwe"/>
+                        <constraint firstAttribute="trailing" secondItem="R8Z-Oh-9LZ" secondAttribute="trailing" constant="16" id="nAa-1c-tBA"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKS-SS-dU7">
+                    <rect key="frame" x="16" y="738" width="361" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="mTE-1f-S7d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="24"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="DONE">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="doneBtnTapped:" destination="-1" eventType="touchUpInside" id="eGI-PB-6V7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="0Ym-Ys-mGw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6Bv-Bw-dSn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VKS-SS-dU7" secondAttribute="trailing" constant="16" id="A7B-4D-vh7"/>
+                <constraint firstItem="rD8-Fn-JLQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AJH-QY-gs6"/>
+                <constraint firstAttribute="bottom" secondItem="0Ym-Ys-mGw" secondAttribute="bottom" id="AL4-P8-KUf"/>
+                <constraint firstItem="rD8-Fn-JLQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KTx-ME-PI3"/>
+                <constraint firstItem="0Ym-Ys-mGw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="URN-g7-TSe"/>
+                <constraint firstItem="VKS-SS-dU7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Yr7-3P-Iil"/>
+                <constraint firstItem="VKS-SS-dU7" firstAttribute="top" secondItem="rD8-Fn-JLQ" secondAttribute="bottom" constant="8" id="ZLO-Kq-Vh2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VKS-SS-dU7" secondAttribute="bottom" constant="30" id="c95-pl-G61"/>
+                <constraint firstItem="rD8-Fn-JLQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="mGM-LZ-Fd8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Ym-Ys-mGw" secondAttribute="trailing" id="nPv-jx-tiN"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BG" width="375" height="812"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

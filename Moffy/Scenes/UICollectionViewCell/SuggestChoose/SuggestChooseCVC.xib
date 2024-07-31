@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+        <array key="Quicksand SemiBold.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SuggestChooseCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="165" height="224"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="165" height="224"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0G-Z7-k6d">
+                        <rect key="frame" x="0.0" y="0.0" width="165" height="224"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m9z-VZ-OEp">
+                                <rect key="frame" x="0.0" y="0.0" width="165" height="224"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BorderCell" translatesAutoresizingMaskIntoConstraints="NO" id="Pe8-bt-4ab">
+                                <rect key="frame" x="0.0" y="0.0" width="165" height="224"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BottomBG" translatesAutoresizingMaskIntoConstraints="NO" id="Fwf-Ff-6cp">
+                                <rect key="frame" x="-2" y="129" width="167" height="95"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="EsH-3D-T5L"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgZ-th-3Py">
+                                <rect key="frame" x="10" y="192.33333333333334" width="145" height="12.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uew-et-8Yz">
+                                <rect key="frame" x="10" y="168.33333333333334" width="145" height="20"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckBox" translatesAutoresizingMaskIntoConstraints="NO" id="diB-9w-Suh">
+                                <rect key="frame" x="119" y="4" width="34" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="7r9-bv-3DV"/>
+                                    <constraint firstAttribute="height" constant="31" id="FM6-PF-7Ys"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Pe8-bt-4ab" secondAttribute="bottom" id="1gJ-yr-9Qn"/>
+                            <constraint firstItem="Fwf-Ff-6cp" firstAttribute="leading" secondItem="l0G-Z7-k6d" secondAttribute="leading" constant="-2" id="2f7-ca-qUe"/>
+                            <constraint firstItem="Pe8-bt-4ab" firstAttribute="top" secondItem="l0G-Z7-k6d" secondAttribute="top" id="3nD-Ez-K8S"/>
+                            <constraint firstAttribute="bottom" secondItem="Fwf-Ff-6cp" secondAttribute="bottom" id="CVi-lk-SDe"/>
+                            <constraint firstItem="m9z-VZ-OEp" firstAttribute="leading" secondItem="l0G-Z7-k6d" secondAttribute="leading" id="D9o-Ne-BOg"/>
+                            <constraint firstItem="diB-9w-Suh" firstAttribute="top" secondItem="l0G-Z7-k6d" secondAttribute="top" constant="4" id="FaG-Pf-sHf"/>
+                            <constraint firstAttribute="bottom" secondItem="cgZ-th-3Py" secondAttribute="bottom" constant="19" id="JD9-BP-0ZW"/>
+                            <constraint firstItem="uew-et-8Yz" firstAttribute="leading" secondItem="l0G-Z7-k6d" secondAttribute="leading" constant="10" id="JuF-gO-CdB"/>
+                            <constraint firstAttribute="trailing" secondItem="diB-9w-Suh" secondAttribute="trailing" constant="12" id="QDv-W7-ee2"/>
+                            <constraint firstAttribute="bottom" secondItem="m9z-VZ-OEp" secondAttribute="bottom" id="Sx6-bQ-Rss"/>
+                            <constraint firstAttribute="trailing" secondItem="uew-et-8Yz" secondAttribute="trailing" constant="10" id="Yzv-0r-aQN"/>
+                            <constraint firstItem="m9z-VZ-OEp" firstAttribute="top" secondItem="l0G-Z7-k6d" secondAttribute="top" id="ayG-eU-noR"/>
+                            <constraint firstAttribute="trailing" secondItem="cgZ-th-3Py" secondAttribute="trailing" constant="10" id="bYV-NX-ZTe"/>
+                            <constraint firstAttribute="trailing" secondItem="Fwf-Ff-6cp" secondAttribute="trailing" id="drc-hf-C21"/>
+                            <constraint firstItem="Pe8-bt-4ab" firstAttribute="leading" secondItem="l0G-Z7-k6d" secondAttribute="leading" id="g24-QT-6r3"/>
+                            <constraint firstAttribute="trailing" secondItem="m9z-VZ-OEp" secondAttribute="trailing" id="j6E-jS-nly"/>
+                            <constraint firstItem="cgZ-th-3Py" firstAttribute="leading" secondItem="l0G-Z7-k6d" secondAttribute="leading" constant="10" id="jni-TA-ZT6"/>
+                            <constraint firstAttribute="trailing" secondItem="Pe8-bt-4ab" secondAttribute="trailing" id="pOp-cP-3Ta"/>
+                            <constraint firstItem="cgZ-th-3Py" firstAttribute="top" secondItem="uew-et-8Yz" secondAttribute="bottom" constant="4" id="zvx-4T-Sw3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="l0G-Z7-k6d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4Kt-VC-ntR"/>
+                <constraint firstAttribute="bottom" secondItem="l0G-Z7-k6d" secondAttribute="bottom" id="7VL-0Y-pF0"/>
+                <constraint firstItem="l0G-Z7-k6d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WSg-rC-bW3"/>
+                <constraint firstAttribute="trailing" secondItem="l0G-Z7-k6d" secondAttribute="trailing" id="khx-sv-nwd"/>
+            </constraints>
+            <size key="customSize" width="551" height="623"/>
+            <connections>
+                <outlet property="bgBottom" destination="Fwf-Ff-6cp" id="JXu-VO-ZhW"/>
+                <outlet property="borderCell" destination="Pe8-bt-4ab" id="kFe-Jk-MOx"/>
+                <outlet property="checkBox" destination="diB-9w-Suh" id="cii-EZ-eT5"/>
+                <outlet property="genres" destination="cgZ-th-3Py" id="f1U-Ds-gcT"/>
+                <outlet property="imageMovie" destination="m9z-VZ-OEp" id="Osx-HP-i3c"/>
+                <outlet property="name" destination="uew-et-8Yz" id="Oom-04-E6j"/>
+                <outlet property="view" destination="l0G-Z7-k6d" id="Saf-Ie-Vo0"/>
+            </connections>
+            <point key="canvasLocation" x="405.34351145038164" y="189.08450704225353"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BorderCell" width="165.33332824707031" height="224"/>
+        <image name="BottomBG" width="165.33332824707031" height="95.333335876464844"/>
+        <image name="CheckBox" width="18.333333969116211" height="17.666666030883789"/>
+    </resources>
+</document>

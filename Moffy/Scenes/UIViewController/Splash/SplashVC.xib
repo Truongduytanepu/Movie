@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashVC" customModule="Moffy" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="mDh-O5-8Ng">
+                    <rect key="frame" x="-2" y="0.0" width="397" height="852"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ornament" translatesAutoresizingMaskIntoConstraints="NO" id="4al-ec-2Q8">
+                    <rect key="frame" x="-146.66666666666666" y="83" width="686.33333333333337" height="686"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="686" id="7fa-yt-Z9u"/>
+                        <constraint firstAttribute="width" secondItem="4al-ec-2Q8" secondAttribute="height" id="hdz-e3-ldL"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="AbP-xn-dJp">
+                    <rect key="frame" x="150" y="392" width="93" height="93"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="93" id="i4U-Rx-QMg"/>
+                        <constraint firstAttribute="width" secondItem="AbP-xn-dJp" secondAttribute="height" id="yGK-Qe-rPp"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mDh-O5-8Ng" secondAttribute="bottom" id="0f7-Py-Oeo"/>
+                <constraint firstItem="mDh-O5-8Ng" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="-2" id="72W-We-ljL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mDh-O5-8Ng" secondAttribute="trailing" constant="-2" id="H5T-Dg-64m"/>
+                <constraint firstItem="4al-ec-2Q8" firstAttribute="centerX" secondItem="mDh-O5-8Ng" secondAttribute="centerX" id="O6i-wl-3hl"/>
+                <constraint firstItem="4al-ec-2Q8" firstAttribute="centerY" secondItem="mDh-O5-8Ng" secondAttribute="centerY" id="UwR-6j-37W"/>
+                <constraint firstItem="AbP-xn-dJp" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="mxJ-j4-9Qy"/>
+                <constraint firstItem="mDh-O5-8Ng" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="teT-pM-RYW"/>
+                <constraint firstItem="AbP-xn-dJp" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="yku-JI-0Aa"/>
+            </constraints>
+            <point key="canvasLocation" x="58.778625954198468" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BG" width="375" height="812"/>
+        <image name="Logo" width="96.666664123535156" height="129.66667175292969"/>
+        <image name="Ornament" width="350" height="349"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

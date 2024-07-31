@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="manrope-semibold.ttf">
+            <string>Manrope-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SuggestPlanBotCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiN-Ca-0Jo">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="240"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xDv-TO-mmF">
+                                <rect key="frame" x="18" y="40.333333333333329" width="339" height="199.66666666666669"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4C5-O5-OT4">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af8-Dd-HBS">
+                                <rect key="frame" x="18" y="0.0" width="339" height="30.333333333333332"/>
+                                <fontDescription key="fontDescription" name="Manrope-SemiBold" family="Manrope" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xDv-TO-mmF" secondAttribute="trailing" id="5yj-z6-kv6"/>
+                            <constraint firstItem="af8-Dd-HBS" firstAttribute="leading" secondItem="ZiN-Ca-0Jo" secondAttribute="leading" constant="18" id="Jzp-XI-uym"/>
+                            <constraint firstAttribute="bottom" secondItem="xDv-TO-mmF" secondAttribute="bottom" id="L5q-z5-Dbd"/>
+                            <constraint firstItem="xDv-TO-mmF" firstAttribute="top" secondItem="af8-Dd-HBS" secondAttribute="bottom" constant="10" id="LB3-KL-SRd"/>
+                            <constraint firstItem="af8-Dd-HBS" firstAttribute="top" secondItem="ZiN-Ca-0Jo" secondAttribute="top" id="pK8-6B-NYD"/>
+                            <constraint firstItem="xDv-TO-mmF" firstAttribute="leading" secondItem="ZiN-Ca-0Jo" secondAttribute="leading" constant="18" id="qYH-Yr-xR1"/>
+                            <constraint firstAttribute="trailing" secondItem="af8-Dd-HBS" secondAttribute="trailing" id="uH5-Ab-MXp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZiN-Ca-0Jo" secondAttribute="bottom" id="0fK-uR-OAq"/>
+                <constraint firstItem="ZiN-Ca-0Jo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4Pl-Wg-6i1"/>
+                <constraint firstItem="ZiN-Ca-0Jo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xq6-YA-yxY"/>
+                <constraint firstAttribute="trailing" secondItem="ZiN-Ca-0Jo" secondAttribute="trailing" id="goM-w7-nyG"/>
+            </constraints>
+            <size key="customSize" width="434" height="314"/>
+            <connections>
+                <outlet property="collectionView" destination="xDv-TO-mmF" id="SUZ-sh-bnp"/>
+            </connections>
+            <point key="canvasLocation" x="356.48854961832058" y="81.690140845070431"/>
+        </collectionViewCell>
+    </objects>
+</document>

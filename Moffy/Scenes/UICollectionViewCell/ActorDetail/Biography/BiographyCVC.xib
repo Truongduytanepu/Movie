@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand SemiBold.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+        <array key="manrope-medium.ttf">
+            <string>Manrope-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BiographyCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="157"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="157"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="r1a-5d-eFI">
+                        <rect key="frame" x="0.0" y="25" width="307" height="132"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3th-K0-TM3">
+                                <rect key="frame" x="16" y="0.0" width="291" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="O0Q-LS-2l7"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jV-t1-Je9">
+                                <rect key="frame" x="254" y="117" width="53" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="UQe-5q-NA9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="See More"/>
+                                <connections>
+                                    <action selector="seeMoreBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="plO-un-j7S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3th-K0-TM3" firstAttribute="leading" secondItem="r1a-5d-eFI" secondAttribute="leading" constant="16" id="pps-c8-mJ1"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhb-Pk-7b1">
+                        <rect key="frame" x="16" y="0.0" width="291" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="5C3-Gq-qpy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Uhb-Pk-7b1" secondAttribute="trailing" constant="16" id="8WR-XJ-ko5"/>
+                <constraint firstItem="Uhb-Pk-7b1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GlN-pH-4gf"/>
+                <constraint firstAttribute="trailing" secondItem="r1a-5d-eFI" secondAttribute="trailing" constant="16" id="TyS-2K-rzS"/>
+                <constraint firstItem="r1a-5d-eFI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cZD-iw-CwX"/>
+                <constraint firstItem="r1a-5d-eFI" firstAttribute="top" secondItem="Uhb-Pk-7b1" secondAttribute="bottom" id="faS-dt-AXq"/>
+                <constraint firstAttribute="bottom" secondItem="r1a-5d-eFI" secondAttribute="bottom" id="ouy-sy-aEb"/>
+                <constraint firstItem="Uhb-Pk-7b1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="vzu-3L-JcM"/>
+            </constraints>
+            <size key="customSize" width="323" height="157"/>
+            <connections>
+                <outlet property="bioTextView" destination="3th-K0-TM3" id="bnU-Ql-dyn"/>
+                <outlet property="heightBioTextView" destination="O0Q-LS-2l7" id="FKt-kh-T0k"/>
+                <outlet property="seeAllBtn" destination="2jV-t1-Je9" id="08h-hY-pTd"/>
+            </connections>
+            <point key="canvasLocation" x="315.26717557251908" y="26.408450704225352"/>
+        </collectionViewCell>
+    </objects>
+</document>

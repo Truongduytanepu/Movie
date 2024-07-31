@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand SemiBold.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+        <array key="manrope-semibold.ttf">
+            <string>Manrope-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PopularPeopleCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="490"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="467" height="490"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4B2-Nh-4iX">
+                        <rect key="frame" x="0.0" y="0.0" width="467" height="490"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ec1-u7-TIX">
+                                <rect key="frame" x="0.0" y="0.0" width="467" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bom-VP-LzU">
+                                        <rect key="frame" x="16" y="0.0" width="201" height="34"/>
+                                        <fontDescription key="fontDescription" name="Manrope-SemiBold" family="Manrope" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFM-BO-gfe">
+                                        <rect key="frame" x="398.66666666666669" y="8" width="52.333333333333314" height="18"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="More " image="MoreRight">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="seeAllPopularPeopleBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="new-gF-RzG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="5pG-O3-TAg"/>
+                                    <constraint firstAttribute="trailing" secondItem="VFM-BO-gfe" secondAttribute="trailing" constant="16" id="HUB-VZ-Q5J"/>
+                                    <constraint firstItem="Bom-VP-LzU" firstAttribute="leading" secondItem="ec1-u7-TIX" secondAttribute="leading" constant="16" id="XDY-t3-fVS"/>
+                                    <constraint firstItem="Bom-VP-LzU" firstAttribute="top" secondItem="ec1-u7-TIX" secondAttribute="top" id="Yz2-LV-a1l"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bom-VP-LzU" secondAttribute="bottom" id="g9q-Zh-1XR"/>
+                                    <constraint firstItem="VFM-BO-gfe" firstAttribute="centerY" secondItem="Bom-VP-LzU" secondAttribute="centerY" id="gcG-zN-4mv"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="EnP-4c-RdL">
+                                <rect key="frame" x="0.0" y="46" width="467" height="444"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="48R-vT-n14">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EnP-4c-RdL" secondAttribute="trailing" id="07l-pm-KLJ"/>
+                            <constraint firstItem="ec1-u7-TIX" firstAttribute="leading" secondItem="4B2-Nh-4iX" secondAttribute="leading" id="6dj-zR-iKg"/>
+                            <constraint firstAttribute="bottom" secondItem="EnP-4c-RdL" secondAttribute="bottom" id="EmI-8S-Y2G"/>
+                            <constraint firstItem="EnP-4c-RdL" firstAttribute="top" secondItem="ec1-u7-TIX" secondAttribute="bottom" constant="12" id="Q1I-rf-xsC"/>
+                            <constraint firstItem="ec1-u7-TIX" firstAttribute="top" secondItem="4B2-Nh-4iX" secondAttribute="top" id="SSs-cw-kGX"/>
+                            <constraint firstItem="EnP-4c-RdL" firstAttribute="leading" secondItem="4B2-Nh-4iX" secondAttribute="leading" id="XSV-7Y-7u8"/>
+                            <constraint firstAttribute="trailing" secondItem="ec1-u7-TIX" secondAttribute="trailing" id="bhi-Lf-QiB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4B2-Nh-4iX" secondAttribute="trailing" id="4mg-Jp-k7X"/>
+                <constraint firstAttribute="bottom" secondItem="4B2-Nh-4iX" secondAttribute="bottom" id="dzk-vg-76V"/>
+                <constraint firstItem="4B2-Nh-4iX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mIP-q8-ObZ"/>
+                <constraint firstItem="4B2-Nh-4iX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wwv-KS-kvK"/>
+            </constraints>
+            <size key="customSize" width="467" height="490"/>
+            <connections>
+                <outlet property="collectionView" destination="EnP-4c-RdL" id="SRn-XC-qhY"/>
+            </connections>
+            <point key="canvasLocation" x="329.00763358778624" y="143.66197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="MoreRight" width="14.333333015441895" height="14"/>
+    </resources>
+</document>

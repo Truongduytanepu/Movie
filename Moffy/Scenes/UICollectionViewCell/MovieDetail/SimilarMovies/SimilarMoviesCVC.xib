@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand SemiBold.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SimilarMoviesCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="369"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="369"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7s-tA-682">
+                        <rect key="frame" x="0.0" y="0.0" width="330" height="369"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PVe-Py-8wi">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Similar Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pE-rr-epH">
+                                        <rect key="frame" x="16" y="0.0" width="124" height="34"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5T-L9-KAK">
+                                        <rect key="frame" x="261.66666666666669" y="8" width="52.333333333333314" height="18"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="More " image="MoreRight">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="seeMoreSimilarBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="oAa-6o-m08"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="H5T-L9-KAK" secondAttribute="trailing" constant="16" id="Awd-9U-aHk"/>
+                                    <constraint firstItem="5pE-rr-epH" firstAttribute="leading" secondItem="PVe-Py-8wi" secondAttribute="leading" constant="16" id="QHS-B3-Erw"/>
+                                    <constraint firstItem="5pE-rr-epH" firstAttribute="top" secondItem="PVe-Py-8wi" secondAttribute="top" id="XcY-O2-rcG"/>
+                                    <constraint firstAttribute="height" constant="34" id="dP9-sX-y8V"/>
+                                    <constraint firstAttribute="bottom" secondItem="5pE-rr-epH" secondAttribute="bottom" id="fot-TF-AOq"/>
+                                    <constraint firstItem="H5T-L9-KAK" firstAttribute="centerY" secondItem="5pE-rr-epH" secondAttribute="centerY" id="roQ-ca-YdT"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bdm-V5-05H">
+                                <rect key="frame" x="0.0" y="46" width="330" height="323"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="J30-PC-MqD">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PVe-Py-8wi" firstAttribute="leading" secondItem="b7s-tA-682" secondAttribute="leading" id="CO1-ga-FW6"/>
+                            <constraint firstItem="bdm-V5-05H" firstAttribute="top" secondItem="PVe-Py-8wi" secondAttribute="bottom" constant="12" id="EY0-qu-JbK"/>
+                            <constraint firstAttribute="bottom" secondItem="bdm-V5-05H" secondAttribute="bottom" id="MHd-2S-fGG"/>
+                            <constraint firstAttribute="trailing" secondItem="bdm-V5-05H" secondAttribute="trailing" id="ebI-B3-ESh"/>
+                            <constraint firstAttribute="trailing" secondItem="PVe-Py-8wi" secondAttribute="trailing" id="h48-X1-dfb"/>
+                            <constraint firstItem="bdm-V5-05H" firstAttribute="leading" secondItem="b7s-tA-682" secondAttribute="leading" id="rfP-g9-UBI"/>
+                            <constraint firstItem="PVe-Py-8wi" firstAttribute="top" secondItem="b7s-tA-682" secondAttribute="top" id="w15-zx-SBq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="b7s-tA-682" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0Ru-9w-cPb"/>
+                <constraint firstAttribute="bottom" secondItem="b7s-tA-682" secondAttribute="bottom" id="3Ac-F6-Pxq"/>
+                <constraint firstItem="b7s-tA-682" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7Wm-OT-5JT"/>
+                <constraint firstAttribute="trailing" secondItem="b7s-tA-682" secondAttribute="trailing" id="e6m-a6-Ftn"/>
+            </constraints>
+            <size key="customSize" width="330" height="369"/>
+            <connections>
+                <outlet property="collectionView" destination="bdm-V5-05H" id="isj-hX-ZAJ"/>
+            </connections>
+            <point key="canvasLocation" x="343.51145038167937" y="99.647887323943664"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="MoreRight" width="14.333333015441895" height="14"/>
+    </resources>
+</document>

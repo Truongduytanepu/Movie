@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="manrope-semibold.ttf">
+            <string>Manrope-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddExistingPlanVC" customModule="Moffy" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="SFU-Ak-TlX" id="JgC-XT-cQR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="gyc-Hb-naS">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2w-AO-eaZ">
+                    <rect key="frame" x="0.0" y="63" width="393" height="29"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXr-sq-VRY">
+                            <rect key="frame" x="16" y="2.6666666666666714" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="F4L-Ps-mph"/>
+                                <constraint firstAttribute="width" secondItem="qXr-sq-VRY" secondAttribute="height" id="idO-2e-iQf"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="Back 1" title=""/>
+                            <connections>
+                                <action selector="backNavigationBtnTapped:" destination="-1" eventType="touchUpInside" id="mxZ-DS-Lo8"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Plan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiW-7p-G3j">
+                            <rect key="frame" x="143.66666666666666" y="-2" width="105.66666666666666" height="33"/>
+                            <fontDescription key="fontDescription" name="Manrope-SemiBold" family="Manrope" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="JD3-fJ-c0Q"/>
+                        <constraint firstItem="BiW-7p-G3j" firstAttribute="centerX" secondItem="L2w-AO-eaZ" secondAttribute="centerX" id="YtM-b9-qNa"/>
+                        <constraint firstItem="qXr-sq-VRY" firstAttribute="leading" secondItem="L2w-AO-eaZ" secondAttribute="leading" constant="16" id="eF7-Gf-xu6"/>
+                        <constraint firstItem="BiW-7p-G3j" firstAttribute="centerY" secondItem="L2w-AO-eaZ" secondAttribute="centerY" id="vg2-CG-uxM"/>
+                        <constraint firstItem="qXr-sq-VRY" firstAttribute="centerY" secondItem="L2w-AO-eaZ" secondAttribute="centerY" id="yZ7-4R-E9v"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="SFU-Ak-TlX">
+                    <rect key="frame" x="31" y="109" width="331" height="659"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5uC-Ua-AR9">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDV-4F-VrL">
+                    <rect key="frame" x="16" y="768" width="361" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="i9I-kv-ggS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="24"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="DONE" backgroundImage="doneBtn">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="doneBtnTapped:" destination="-1" eventType="touchUpInside" id="RtT-n6-XQ4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DDV-4F-VrL" secondAttribute="bottom" id="9KZ-iz-UU3"/>
+                <constraint firstItem="SFU-Ak-TlX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="31" id="AdL-rc-hy6"/>
+                <constraint firstItem="DDV-4F-VrL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="G0z-8Q-5wg"/>
+                <constraint firstItem="gyc-Hb-naS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GBa-wh-XWb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DDV-4F-VrL" secondAttribute="trailing" constant="16" id="U1Q-ML-UGw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SFU-Ak-TlX" secondAttribute="trailing" constant="31" id="VOv-bf-Nrr"/>
+                <constraint firstAttribute="trailing" secondItem="L2w-AO-eaZ" secondAttribute="trailing" id="Xvr-YQ-PVp"/>
+                <constraint firstItem="L2w-AO-eaZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="j8I-ZJ-QSl"/>
+                <constraint firstItem="DDV-4F-VrL" firstAttribute="top" secondItem="SFU-Ak-TlX" secondAttribute="bottom" id="jJn-ui-atf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gyc-Hb-naS" secondAttribute="trailing" id="jtV-Lx-DES"/>
+                <constraint firstItem="gyc-Hb-naS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="l1a-z3-UaO"/>
+                <constraint firstAttribute="bottom" secondItem="gyc-Hb-naS" secondAttribute="bottom" id="o10-MI-52J"/>
+                <constraint firstItem="L2w-AO-eaZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="4" id="qFU-UX-d4U"/>
+                <constraint firstItem="SFU-Ak-TlX" firstAttribute="top" secondItem="L2w-AO-eaZ" secondAttribute="bottom" constant="17" id="reZ-nw-XHN"/>
+            </constraints>
+            <point key="canvasLocation" x="9.9236641221374047" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BG" width="375" height="812"/>
+        <image name="Back 1" width="24" height="24.333333969116211"/>
+        <image name="doneBtn" width="343.33334350585938" height="50.333332061767578"/>
+    </resources>
+</document>

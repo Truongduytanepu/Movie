@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="manrope-light.ttf">
+            <string>Manrope-Light</string>
+        </array>
+        <array key="manrope-semibold.ttf">
+            <string>Manrope-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChooseMovieInBotCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="257"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="257"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bmw-ag-60d">
+                        <rect key="frame" x="0.0" y="0.0" width="105" height="257"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xcc-pP-DtH">
+                                <rect key="frame" x="0.0" y="0.0" width="105" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="E1N-o6-WkI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miniseries- The biggest thing..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Em-2B-c9H">
+                                <rect key="frame" x="0.0" y="156" width="105" height="59.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Manrope-SemiBold" family="Manrope" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DS6-4h-qyv">
+                                <rect key="frame" x="0.0" y="219.66666666666666" width="105" height="37.333333333333343"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0Uv-0e-9Cm">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="37.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e19-sV-I5z">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="16.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="Manrope-Light" family="Manrope" pointSize="12"/>
+                                                <color key="textColor" red="0.52941179279999995" green="0.52941179279999995" blue="0.52549022440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3l-mB-oyx">
+                                                <rect key="frame" x="0.0" y="20.666666666666686" width="80" height="16.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Manrope-Light" family="Manrope" pointSize="12"/>
+                                                <color key="textColor" red="0.52941179279999995" green="0.52941179279999995" blue="0.52549022440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="d3l-mB-oyx" secondAttribute="bottom" id="9D4-BY-GPC"/>
+                                            <constraint firstItem="e19-sV-I5z" firstAttribute="leading" secondItem="0Uv-0e-9Cm" secondAttribute="leading" id="E8A-sj-EyC"/>
+                                            <constraint firstAttribute="trailing" secondItem="d3l-mB-oyx" secondAttribute="trailing" id="Jmq-tl-0Fe"/>
+                                            <constraint firstItem="e19-sV-I5z" firstAttribute="top" secondItem="0Uv-0e-9Cm" secondAttribute="top" id="LCH-HR-HD3"/>
+                                            <constraint firstItem="d3l-mB-oyx" firstAttribute="leading" secondItem="0Uv-0e-9Cm" secondAttribute="leading" id="bTS-xQ-Vmu"/>
+                                            <constraint firstAttribute="trailing" secondItem="e19-sV-I5z" secondAttribute="trailing" id="hn7-Bu-brE"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGt-N5-IWV">
+                                        <rect key="frame" x="88" y="20.333333333333343" width="17" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="Mlg-Gw-G8M"/>
+                                            <constraint firstAttribute="width" constant="17" id="owk-Fq-v0q"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="Trash"/>
+                                        <connections>
+                                            <action selector="deleteMovieTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="iVF-TA-QWb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0Uv-0e-9Cm" secondAttribute="bottom" id="a7K-ul-P5n"/>
+                                    <constraint firstItem="0Uv-0e-9Cm" firstAttribute="leading" secondItem="DS6-4h-qyv" secondAttribute="leading" id="lSL-gy-oyx"/>
+                                    <constraint firstItem="0Uv-0e-9Cm" firstAttribute="top" secondItem="DS6-4h-qyv" secondAttribute="top" id="nSq-bK-GJc"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MovieDone" translatesAutoresizingMaskIntoConstraints="NO" id="j4s-aD-Zfh">
+                                <rect key="frame" x="11" y="11" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="TB6-RX-5dM"/>
+                                    <constraint firstAttribute="width" constant="25" id="XPI-nV-QGW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Xcc-pP-DtH" secondAttribute="trailing" id="RNJ-Dz-ab3"/>
+                            <constraint firstAttribute="trailing" secondItem="DS6-4h-qyv" secondAttribute="trailing" id="UDx-eh-yai"/>
+                            <constraint firstAttribute="trailing" secondItem="1Em-2B-c9H" secondAttribute="trailing" id="VBl-2m-ZFN"/>
+                            <constraint firstItem="DS6-4h-qyv" firstAttribute="leading" secondItem="Bmw-ag-60d" secondAttribute="leading" id="b4k-f1-9HN"/>
+                            <constraint firstItem="j4s-aD-Zfh" firstAttribute="top" secondItem="Bmw-ag-60d" secondAttribute="top" constant="11" id="cg2-IN-QCv"/>
+                            <constraint firstItem="Xcc-pP-DtH" firstAttribute="top" secondItem="Bmw-ag-60d" secondAttribute="top" id="hWW-uz-epx"/>
+                            <constraint firstItem="j4s-aD-Zfh" firstAttribute="leading" secondItem="Bmw-ag-60d" secondAttribute="leading" constant="11" id="kFJ-Eo-UFb"/>
+                            <constraint firstAttribute="bottom" secondItem="DS6-4h-qyv" secondAttribute="bottom" id="qKw-il-hwW"/>
+                            <constraint firstItem="Xcc-pP-DtH" firstAttribute="leading" secondItem="Bmw-ag-60d" secondAttribute="leading" id="r7b-uq-9B9"/>
+                            <constraint firstItem="DS6-4h-qyv" firstAttribute="top" relation="lessThanOrEqual" secondItem="1Em-2B-c9H" secondAttribute="bottom" constant="4" id="sGi-2W-D8d"/>
+                            <constraint firstItem="1Em-2B-c9H" firstAttribute="leading" secondItem="Bmw-ag-60d" secondAttribute="leading" id="yAw-tO-j71"/>
+                            <constraint firstItem="1Em-2B-c9H" firstAttribute="top" secondItem="Xcc-pP-DtH" secondAttribute="bottom" constant="8" id="yfG-vD-pCe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Bmw-ag-60d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MHd-Wl-Lcf"/>
+                <constraint firstAttribute="trailing" secondItem="Bmw-ag-60d" secondAttribute="trailing" id="Y05-Re-Ghb"/>
+                <constraint firstItem="Bmw-ag-60d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="od5-so-1kh"/>
+                <constraint firstAttribute="bottom" secondItem="Bmw-ag-60d" secondAttribute="bottom" id="onC-Sq-z1W"/>
+            </constraints>
+            <size key="customSize" width="257" height="122"/>
+            <connections>
+                <outlet property="genreAndYearLbl" destination="e19-sV-I5z" id="YgW-ps-Ist"/>
+                <outlet property="imageDone" destination="j4s-aD-Zfh" id="6In-V7-TDr"/>
+                <outlet property="imageMovie" destination="Xcc-pP-DtH" id="dIJ-PF-1Ma"/>
+                <outlet property="movieNameLbl" destination="1Em-2B-c9H" id="FkT-EK-olX"/>
+                <outlet property="timeLbl" destination="d3l-mB-oyx" id="Ora-Lv-tR0"/>
+            </connections>
+            <point key="canvasLocation" x="296.94656488549617" y="44.718309859154935"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="MovieDone" width="25.333333969116211" height="25.333333969116211"/>
+        <image name="Trash" width="17.333333969116211" height="17.333333969116211"/>
+    </resources>
+</document>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+        <array key="manrope-medium.ttf">
+            <string>Manrope-Medium</string>
+        </array>
+        <array key="manrope-semibold.ttf">
+            <string>Manrope-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SuggestPlanInTopCVC" customModule="Moffy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="262"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="262"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEh-vS-lv7">
+                        <rect key="frame" x="0.0" y="0.0" width="387" height="262"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WXZ-Qp-WrT">
+                                <rect key="frame" x="0.0" y="0.0" width="387" height="262"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9F-Zs-iEe">
+                                <rect key="frame" x="15" y="175" width="267" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan for the weekend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cL-he-m19">
+                                        <rect key="frame" x="20" y="8" width="227" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="nFn-Hp-Cbf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Manrope-SemiBold" family="Manrope" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqa-XZ-UA2">
+                                        <rect key="frame" x="20" y="30" width="28.333333333333329" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="jBZ-L0-keB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="8"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start: 15/07/2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04x-eR-6HL">
+                                        <rect key="frame" x="20" y="46" width="64" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="cXT-iX-gBp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="8"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comedy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xba-ys-g2L">
+                                        <rect key="frame" x="53.333333333333336" y="30" width="30.333333333333336" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="yvS-Hk-5jv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="8"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYb-BB-HKo">
+                                        <rect key="frame" x="48.333333333333336" y="30" width="5" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="eKv-iD-i4F"/>
+                                            <constraint firstAttribute="width" constant="5" id="msV-YL-chQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="8"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start: 15/07/2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdw-f7-JkI">
+                                        <rect key="frame" x="183" y="46" width="64" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="fR0-de-aOZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="8"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ZYb-BB-HKo" firstAttribute="leading" secondItem="Iqa-XZ-UA2" secondAttribute="trailing" id="0Gj-Gs-JZ2"/>
+                                    <constraint firstItem="Iqa-XZ-UA2" firstAttribute="top" secondItem="8cL-he-m19" secondAttribute="bottom" id="6ui-k1-nZg"/>
+                                    <constraint firstAttribute="trailing" secondItem="8cL-he-m19" secondAttribute="trailing" constant="20" id="CWe-Tu-b9e"/>
+                                    <constraint firstItem="mdw-f7-JkI" firstAttribute="top" secondItem="8cL-he-m19" secondAttribute="bottom" constant="16" id="Ch8-QQ-Kfh"/>
+                                    <constraint firstItem="xba-ys-g2L" firstAttribute="top" secondItem="8cL-he-m19" secondAttribute="bottom" id="EmV-BI-Oud"/>
+                                    <constraint firstItem="04x-eR-6HL" firstAttribute="leading" secondItem="F9F-Zs-iEe" secondAttribute="leading" constant="20" id="FUg-QP-9c2"/>
+                                    <constraint firstAttribute="height" constant="64" id="JlE-0g-oFc"/>
+                                    <constraint firstItem="04x-eR-6HL" firstAttribute="centerY" secondItem="mdw-f7-JkI" secondAttribute="centerY" id="KBa-07-1a3"/>
+                                    <constraint firstItem="8cL-he-m19" firstAttribute="top" secondItem="F9F-Zs-iEe" secondAttribute="top" constant="8" id="YHo-ES-VNW"/>
+                                    <constraint firstAttribute="trailing" secondItem="mdw-f7-JkI" secondAttribute="trailing" constant="20" id="c3h-uf-cbE"/>
+                                    <constraint firstItem="8cL-he-m19" firstAttribute="leading" secondItem="F9F-Zs-iEe" secondAttribute="leading" constant="20" id="jC7-oj-YZ6"/>
+                                    <constraint firstItem="Iqa-XZ-UA2" firstAttribute="leading" secondItem="F9F-Zs-iEe" secondAttribute="leading" constant="20" id="qxp-ky-iLl"/>
+                                    <constraint firstItem="xba-ys-g2L" firstAttribute="leading" secondItem="ZYb-BB-HKo" secondAttribute="trailing" id="u6w-jJ-bxK"/>
+                                    <constraint firstItem="ZYb-BB-HKo" firstAttribute="centerY" secondItem="Iqa-XZ-UA2" secondAttribute="centerY" id="zK0-uP-HCr"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jb3-XI-aoT">
+                                <rect key="frame" x="324" y="182" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7ea-wt-R6m"/>
+                                    <constraint firstAttribute="width" constant="50" id="DBH-md-84f"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="AddBtn" title=""/>
+                                <connections>
+                                    <action selector="addSuggestPlanToYourPlanTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="tTM-34-fqA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jb3-XI-aoT" firstAttribute="leading" secondItem="F9F-Zs-iEe" secondAttribute="trailing" constant="42" id="H9z-sE-wve"/>
+                            <constraint firstItem="WXZ-Qp-WrT" firstAttribute="top" secondItem="qEh-vS-lv7" secondAttribute="top" id="IVD-Li-ii9"/>
+                            <constraint firstItem="F9F-Zs-iEe" firstAttribute="leading" secondItem="qEh-vS-lv7" secondAttribute="leading" constant="15" id="Qad-Mo-tbx"/>
+                            <constraint firstAttribute="bottom" secondItem="WXZ-Qp-WrT" secondAttribute="bottom" id="YbR-E4-7sr"/>
+                            <constraint firstAttribute="trailing" secondItem="WXZ-Qp-WrT" secondAttribute="trailing" id="Z8a-HC-aFE"/>
+                            <constraint firstAttribute="trailing" secondItem="jb3-XI-aoT" secondAttribute="trailing" constant="13" id="lAK-O6-SLr"/>
+                            <constraint firstAttribute="bottom" secondItem="F9F-Zs-iEe" secondAttribute="bottom" constant="23" id="p7A-2w-70P"/>
+                            <constraint firstItem="jb3-XI-aoT" firstAttribute="centerY" secondItem="F9F-Zs-iEe" secondAttribute="centerY" id="pvd-nm-dTh"/>
+                            <constraint firstItem="WXZ-Qp-WrT" firstAttribute="leading" secondItem="qEh-vS-lv7" secondAttribute="leading" id="wis-Sa-1y6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qEh-vS-lv7" secondAttribute="trailing" id="bG3-5t-lcF"/>
+                <constraint firstAttribute="bottom" secondItem="qEh-vS-lv7" secondAttribute="bottom" id="t7X-F5-jQM"/>
+                <constraint firstItem="qEh-vS-lv7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="twq-Lx-sBi"/>
+                <constraint firstItem="qEh-vS-lv7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vE6-UX-VwH"/>
+            </constraints>
+            <size key="customSize" width="387" height="262"/>
+            <connections>
+                <outlet property="addBtn" destination="jb3-XI-aoT" id="DMG-Pc-h2g"/>
+                <outlet property="endDateLbl" destination="mdw-f7-JkI" id="xps-w1-ZWZ"/>
+                <outlet property="genreMovieLbl" destination="xba-ys-g2L" id="kSo-I6-Do7"/>
+                <outlet property="imagePlan" destination="WXZ-Qp-WrT" id="sh7-xZ-0y9"/>
+                <outlet property="namePlanLbl" destination="8cL-he-m19" id="JXd-ar-bEZ"/>
+                <outlet property="startDateLbl" destination="04x-eR-6HL" id="cIU-X4-Yiz"/>
+                <outlet property="totalMovieLbl" destination="Iqa-XZ-UA2" id="S32-JL-6AL"/>
+                <outlet property="viewPlan" destination="F9F-Zs-iEe" id="8mq-ie-v2j"/>
+            </connections>
+            <point key="canvasLocation" x="387.02290076335879" y="61.971830985915496"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="AddBtn" width="49.333332061767578" height="50.333332061767578"/>
+    </resources>
+</document>

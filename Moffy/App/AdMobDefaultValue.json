@@ -1,0 +1,120 @@
+{
+  "status": false,
+  "splash": {
+    "name": "ID_Intern_Splash",
+    "status": true,
+    "id": "ca-app-pub-3940256099942544/4411468910",
+    "description": "Sau khi load splash chuyển sang màn home(User tắt ads mới chuyển layout) - Timeout: 30s",
+    "timeout": 30
+  },
+  "appOpen": {
+    "name": "ID_Open_app",
+    "status": true,
+    "id": "ca-app-pub-3940256099942544/5575463023",
+    "description": "Vị trí: Show khi quay lại app"
+  },
+  "rewardeds": [
+    {
+      "name": "ID_Rewards_Camera",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/4741061911",
+      "description": "Ad Reward màn camera, sau khi xem ad +3 lượt quay"
+    }
+  ],
+  "interstitials": [
+    {
+      "name": "AllLayout_Inter",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/4411468910",
+      "start": 0,
+      "frequency": 2
+    },
+    {
+      "name": "Search_Inter",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/4411468910",
+      "start": 1,
+      "frequency": 1
+    }
+  ],
+  "banners": [
+    {
+      "name": "DetailMovie_Banner",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/2934735716",
+      "description": "Vị trí: Dưới button Try now",
+      "anchored": "bottom"
+    },
+    {
+      "name": "DetailTV_Banner",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/2934735716",
+      "description": "Vị trí: Ads collapsible trên cùng màn Camera",
+      "anchored": "top"
+    },
+    {
+      "name": "DetailActor_Banner",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/2934735716",
+      "description": "Vị trí: dưới cùng màn Gallery, Home Trending",
+      "anchored": "bottom"
+    },
+    {
+      "name": "Search_Banner",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/2934735716",
+      "description": "Vị trí: Ads collapsible trên cùng màn Results ",
+      "anchored": "top"
+    }
+  ],
+  "natives": [
+    {
+      "name": "Movie_Native",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/3986624511"
+    },
+    {
+      "name": "TVshow_Native",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/3986624511",
+      "description": "Ad Native dưới cùng màn Language",
+      "isPreload": true
+    },
+    {
+      "name": "SeeAll_Native",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/3986624511",
+      "description": "Ad Native dưới cùng màn chọn Filter"
+    },
+    {
+      "name": "Favorite_Native",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/3986624511",
+      "description": "Ads native dưới cùng màn Sound"
+    },
+    {
+      "name": "AddNote_Native",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/3986624511",
+      "description": "Ad Native dưới cùng màn Share"
+    },
+    {
+      "name": "DetailMovie_Native",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/3986624511",
+      "description": "Ads native dưới cùng màn Sound"
+    },
+    {
+      "name": "DetailTV_Native",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/3986624511",
+      "description": "Ads native dưới cùng màn Sound"
+    },
+    {
+      "name": "AllGenres_Native",
+      "status": true,
+      "id": "ca-app-pub-3940256099942544/3986624511",
+      "description": "Ads native dưới cùng màn Sound"
+    },
+  ]
+}

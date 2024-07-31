@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-3940256099942544~1458002511</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>UTM-Cookies.ttf</string>
+		<string>Montserrat-Regular.ttf</string>
+		<string>UTM AvoBold.ttf</string>
+		<string>Poppins-Regular.ttf</string>
+		<string>Poppins-Black.ttf</string>
+		<string>ReenieBeanie-Regular.ttf</string>
+		<string>Quicksand-Bold.ttf</string>
+		<string>Quicksand-Regular.ttf</string>
+		<string>Quicksand-SemiBold.ttf</string>
+		<string>manrope-semibold.ttf</string>
+		<string>manrope-regular.ttf</string>
+		<string>manrope-medium.ttf</string>
+		<string>manrope-light.ttf</string>
+		<string>manrope-extraLight.ttf</string>
+		<string>manrope-bold.ttf</string>
+		<string>manrope-extrabold.ttf</string>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>
